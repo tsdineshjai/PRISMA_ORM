@@ -5,17 +5,17 @@ const prisma = new PrismaClient();
 async function createUser() {
 	await prisma.user.create({
 		data: {
-			email: "mkbtCat@gmail.com",
-			name: "tropical Cat",
+			email: "belgumaCat@gmail.com",
+			name: "European Cat",
 			posts: {
 				create: {
-					title: "a cat that lives in hot tropical climate",
-					content: "a nice and skinny cat that is popular",
+					title: "a cat that lives in hot European climate",
+					content: "a fluffy cat that is popular",
 				},
 			},
 			profile: {
 				create: {
-					bio: " Cat likes chicken so much  ",
+					bio: " Cat likes bread so much  ",
 				},
 			},
 		},

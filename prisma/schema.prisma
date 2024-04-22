@@ -23,6 +23,8 @@ model Post {
 
 
   @@index(authorId)
+
+  @@map("SuperPost")
 }
 
 model Profile {
